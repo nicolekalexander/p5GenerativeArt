@@ -1,0 +1,67 @@
+var circShape1 = {
+  x:0,
+  y:100,
+  diameter:50
+};
+var circShape2 = {
+  x:100,
+  y:100,
+  diameter:80
+}
+var circShape3 = {
+  x:0,
+  y:0,
+  diameter:80
+}
+var circShape4 = {
+  x:400,
+  y:000,
+  diameter:100
+}
+var circShape5 = {
+  x:0,
+  y:600,
+  diameter:500
+}
+var colors = {
+   r:0,
+   g:0,
+   b:50
+}
+
+function setup() {
+  createCanvas(600, 400);
+}
+function draw() {
+  //background
+  background(colors.r, colors.g, colors.b);
+  
+  //ellipse5
+  fill(210,196,167);
+  ellipse(circShape5.x,circShape5.y, circShape5.diameter,
+circShape5.diameter) ;
+  //ellipse1
+  fill(153, 101, 21);
+  ellipse(circShape1.x, circShape1.y, circShape1.diameter, circShape1.diameter);
+  //ellipse2
+  fill(156,42,0);
+  ellipse(circShape2.x,circShape2.y, circShape2.diameter,
+circShape2.diameter);
+  //ellipse3
+  fill(0,87,217);
+  ellipse(circShape3.x,circShape3.y, circShape3.diameter,
+circShape3.diameter);
+  //ellipse4
+  fill(115,194,251);
+  ellipse(circShape4.x,circShape4.y, circShape4.diameter,
+circShape4.diameter);
+  
+  
+
+circShape1.x = circShape1.x + 1.5;
+circShape2.y = circShape2.y + 1;
+circShape3.y = circShape3.y + 2;
+circShape4.y = circShape4.y + 3;  
+circShape5.y = circShape5.y - 3;          
+}
+
